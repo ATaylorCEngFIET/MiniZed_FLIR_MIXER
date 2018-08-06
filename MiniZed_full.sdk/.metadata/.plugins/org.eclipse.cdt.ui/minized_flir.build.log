@@ -1,0 +1,65 @@
+19:27:21 **** Incremental Build of configuration Debug for project minized_flir ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -gdwarf-3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-CPU\ARM-Cortex-A9\GNU" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-CPU\Cfg\Template" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-CPU" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-LIB" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-LIB\Cfg\Template" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-LIB\Ports\ARM\GNU" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-Probe\Target\Communication\Generic\Source" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-Probe\Target\Communication\Generic\Cfg\Template" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:311:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:316:1: warning: implicit declaration of function 'Xil_DCacheFlushRange' [-Wimplicit-function-declaration]
+ Xil_DCacheFlushRange((unsigned int) pFrames, DEMO_MAX_FRAME);
+ ^
+../src/helloworld.c:346:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/8)][(x/8)+4])<<16)|
+                         ^
+../src/helloworld.c:152:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:346:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/8)][(x/8)+4])<<16)|
+                         ^
+../src/helloworld.c:341:4: note: containing loop
+    for(y = (0); y < (476); y++)
+    ^
+../src/helloworld.c:311:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:307:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:346:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/8)][(x/8)+4])<<16)|
+                         ^
+../src/helloworld.c:338:1: note: containing loop
+ for(x = 0; x < (620); x++)
+ ^
+../src/helloworld.c:311:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:304:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -gdwarf-3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-CPU\ARM-Cortex-A9\GNU" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-CPU\Cfg\Template" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-CPU" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-LIB" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-LIB\Cfg\Template" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-LIB\Ports\ARM\GNU" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-Probe\Target\Communication\Generic\Source" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-Probe\Target\Communication\Generic\Cfg\Template" -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vdma_api.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -gdwarf-3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-CPU\ARM-Cortex-A9\GNU" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-CPU\Cfg\Template" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-CPU" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-LIB" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-LIB\Cfg\Template" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-LIB\Ports\ARM\GNU" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-Probe\Target\Communication\Generic\Source" -I"C:\Users\aptay\Downloads\Micrium-Probe-TargetCode-410\Micrium\Software\uC-Probe\Target\Communication\Generic\Cfg\Template" -c -fmessage-length=0 -MT"src/vdma_api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/vdma_api.d" -MT"src/vdma_api.o" -o "src/vdma_api.o" "../src/vdma_api.c"
+'Finished building: ../src/vdma_api.c'
+' '
+'Building target: minized_flir.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -L../../standalone_bsp_0/ps7_cortexa9_0/lib -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "minized_flir.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -l-Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -l-Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+collect2.exe: error: ld returned 1 exit status
+make: *** [minized_flir.elf] Error 1
+
+19:27:22 Build Finished (took 1s.351ms)
+

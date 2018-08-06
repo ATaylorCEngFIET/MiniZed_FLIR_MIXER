@@ -1,0 +1,131 @@
+21:32:14 **** Incremental Build of configuration Debug for project minized3 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -IC:/hdl_projects/MiniZed_full/MiniZed_full.sdk/standalone_bsp_0/ps7_cortexa9_0/include -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-CPU/ARM-Cortex-A9/GNU -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-CPU -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-CPU/Cfg/Template -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-LIB -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-LIB/Cfg/Template -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-LIB/Ports/ARM/GNU -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-Probe/Target/Communication/Generic/Cfg/Template -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-Probe/Target/Communication/Generic/OS/None -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-Probe/Target/Communication/Generic/RS-232/OS/None -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-Probe/Target/Communication/Generic/RS-232/Ports/Xlinix -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-Probe/Target/Communication/Generic/RS-232/Source -IC:/Users/aptay/Downloads/Micrium-Probe-TargetCode-410/Micrium/Software/uC-Probe/Target/Communication/Generic/Source -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:313:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:318:1: warning: implicit declaration of function 'Xil_DCacheFlushRange' [-Wimplicit-function-declaration]
+ Xil_DCacheFlushRange((unsigned int) pFrames, DEMO_MAX_FRAME);
+ ^
+../src/helloworld.c:348:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/8)][(x/8)+4])<<16)|
+                         ^
+../src/helloworld.c:154:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: minized3.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -o "minized3.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   
+c:/xilinx/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _vector_table; defaulting to 0000000000100000
+./src/helloworld.o: In function `main':
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:61: undefined reference to `XVtc_LookupConfig'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:62: undefined reference to `XVtc_CfgInitialize'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:100: undefined reference to `XVtc_SetGeneratorTiming'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:101: undefined reference to `XVtc_SetSource'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:102: undefined reference to `XVtc_EnableGenerator'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:118: undefined reference to `XAxiVdma_LookupConfig'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:119: undefined reference to `XAxiVdma_CfgInitialize'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:134: undefined reference to `XAxiVdma_DmaConfig'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:135: undefined reference to `XAxiVdma_DmaSetBufferAddr'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:136: undefined reference to `XAxiVdma_DmaStart'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:137: undefined reference to `XAxiVdma_StartParking'
+./src/helloworld.o: In function `IicPsMasterPolledExample':
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:155: undefined reference to `XIicPs_LookupConfig'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:160: undefined reference to `XIicPs_CfgInitialize'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:165: undefined reference to `XIicPs_SelfTest'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:170: undefined reference to `XIicPs_SetSClk'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:172: undefined reference to `XSpi_LookupConfig'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:179: undefined reference to `XSpi_CfgInitialize'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:184: undefined reference to `XSpi_SelfTest'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:189: undefined reference to `XSpi_SetOptions'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:192: undefined reference to `XSpi_Start'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:198: undefined reference to `XIicPs_MasterSendPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:199: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:204: undefined reference to `XIicPs_MasterRecvPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:206: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:208: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:209: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:218: undefined reference to `XIicPs_MasterSendPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:219: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:227: undefined reference to `XIicPs_MasterSendPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:228: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:236: undefined reference to `XIicPs_MasterSendPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:237: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:245: undefined reference to `XIicPs_MasterSendPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:246: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:259: undefined reference to `XIicPs_MasterSendPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:260: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:270: undefined reference to `XIicPs_MasterRecvPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:271: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:275: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:277: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:282: undefined reference to `XIicPs_MasterSendPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:283: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:286: undefined reference to `XIicPs_MasterRecvPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:287: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:291: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:299: undefined reference to `XIicPs_MasterSendPolled'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:300: undefined reference to `XIicPs_BusIsBusy'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:318: undefined reference to `Xil_DCacheFlushRange'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:325: undefined reference to `XSpi_SetSlaveSelect'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:326: undefined reference to `XSpi_Transfer'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/helloworld.c:355: undefined reference to `Xil_DCacheFlushRange'
+./src/platform.o: In function `disable_caches':
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/platform.c:71: undefined reference to `Xil_DCacheDisable'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/platform.c:72: undefined reference to `Xil_ICacheDisable'
+./src/vdma_api.o: In function `run_triple_frame_buffer':
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:150: undefined reference to `XAxiVdma_LookupConfig'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:152: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:160: undefined reference to `XAxiVdma_CfgInitialize'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:163: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:182: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:184: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:191: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:193: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:204: undefined reference to `XAxiVdma_SetFrameCounter'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:207: undefined reference to `XAxiVdma_IntrEnable'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:210: undefined reference to `XAxiVdma_IntrEnable'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:216: undefined reference to `XAxiVdma_IntrEnable'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:218: undefined reference to `XAxiVdma_IntrEnable'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:226: undefined reference to `xil_printf'
+./src/vdma_api.o: In function `ReadSetup':
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:291: undefined reference to `XAxiVdma_DmaConfig'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:293: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:327: undefined reference to `XAxiVdma_DmaSetBufferAddr'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:330: undefined reference to `xil_printf'
+./src/vdma_api.o: In function `WriteSetup':
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:375: undefined reference to `XAxiVdma_DmaConfig'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:377: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:406: undefined reference to `XAxiVdma_DmaSetBufferAddr'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:410: undefined reference to `xil_printf'
+./src/vdma_api.o: In function `StartTransfer':
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:443: undefined reference to `XAxiVdma_DmaStart'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:445: undefined reference to `xil_printf'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:450: undefined reference to `XAxiVdma_DmaStart'
+C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\minized3\Debug/../src/vdma_api.c:452: undefined reference to `xil_printf'
+c:/xilinx/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-sbrkr.o): In function `_sbrk_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/win/arm/arm-none-eabi/snapshots/newlib.git~linaro_newlib-branch/newlib/libc/reent/sbrkr.c:58: undefined reference to `_sbrk'
+c:/xilinx/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-writer.o): In function `_write_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/win/arm/arm-none-eabi/snapshots/newlib.git~linaro_newlib-branch/newlib/libc/reent/writer.c:58: undefined reference to `_write'
+c:/xilinx/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-closer.o): In function `_close_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/win/arm/arm-none-eabi/snapshots/newlib.git~linaro_newlib-branch/newlib/libc/reent/closer.c:53: undefined reference to `_close'
+c:/xilinx/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-fstatr.o): In function `_fstat_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/win/arm/arm-none-eabi/snapshots/newlib.git~linaro_newlib-branch/newlib/libc/reent/fstatr.c:62: undefined reference to `_fstat'
+c:/xilinx/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-isattyr.o): In function `_isatty_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/win/arm/arm-none-eabi/snapshots/newlib.git~linaro_newlib-branch/newlib/libc/reent/isattyr.c:58: undefined reference to `_isatty'
+c:/xilinx/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-lseekr.o): In function `_lseek_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/win/arm/arm-none-eabi/snapshots/newlib.git~linaro_newlib-branch/newlib/libc/reent/lseekr.c:58: undefined reference to `_lseek'
+c:/xilinx/sdk/2016.4/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/lib/v7-a/fpv3/hard\libc.a(lib_a-readr.o): In function `_read_r':
+/proj/esdt_sdk/gnu_abe/ABE/builds/win/arm/arm-none-eabi/snapshots/newlib.git~linaro_newlib-branch/newlib/libc/reent/readr.c:58: undefined reference to `_read'
+collect2.exe: error: ld returned 1 exit status
+make: *** [minized3.elf] Error 1
+
+21:32:15 Build Finished (took 761ms)
+

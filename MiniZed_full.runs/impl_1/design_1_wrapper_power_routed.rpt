@@ -1,0 +1,1299 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date             : Sun Nov 05 11:56:39 2017
+| Host             : DESKTOP-HQKVQ13 running 64-bit major release  (build 9200)
+| Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+| Design           : design_1_wrapper
+| Device           : xc7z007sclg225-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Advance
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-------+
+| Total On-Chip Power (W)  | 1.644 |
+| Dynamic (W)              | 1.509 |
+| Device Static (W)        | 0.135 |
+| Effective TJA (C/W)      | 11.5  |
+| Max Ambient (C)          | 66.0  |
+| Junction Temperature (C) | 44.0  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.066 |        9 |       --- |             --- |
+| Slice Logic              |     0.023 |    38478 |       --- |             --- |
+|   LUT as Logic           |     0.018 |    12964 |     14400 |           90.03 |
+|   CARRY4                 |     0.003 |     1036 |      4400 |           23.55 |
+|   Register               |     0.002 |    19050 |     28800 |           66.15 |
+|   LUT as Distributed RAM |    <0.001 |       26 |      6000 |            0.43 |
+|   F7/F8 Muxes            |    <0.001 |      226 |     17600 |            1.28 |
+|   LUT as Shift Register  |    <0.001 |      423 |      6000 |            7.05 |
+|   Others                 |     0.000 |     1551 |       --- |             --- |
+| Signals                  |     0.035 |    28110 |       --- |             --- |
+| Block RAM                |     0.010 |       28 |        50 |           56.00 |
+| MMCM                     |     0.107 |        1 |         2 |           50.00 |
+| DSPs                     |     0.038 |       42 |        66 |           63.64 |
+| I/O                      |     0.047 |       30 |        54 |           55.56 |
+| PS7                      |     1.182 |        1 |       --- |             --- |
+| Static Power             |     0.135 |          |           |                 |
+| Total                    |     1.644 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.184 |       0.176 |      0.008 |
+| Vccaux    |       1.800 |     0.072 |       0.060 |      0.012 |
+| Vcco33    |       3.300 |     0.013 |       0.012 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.003 |       0.001 |      0.002 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.701 |       0.671 |      0.030 |
+| Vccpaux   |       1.800 |     0.036 |       0.026 |      0.010 |
+| Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
+| Vcco_ddr  |       1.350 |     0.321 |       0.319 |      0.002 |
+| Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco_mio1 |       3.300 |     0.002 |       0.001 |      0.001 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | Medium     | Device models are not Production                       | Device models may change and in turn slightly affect accuracy                                              |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++------------+--------------------------------------------------------------------------------------------------+-----------------+
+| Clock      | Domain                                                                                           | Constraint (ns) |
++------------+--------------------------------------------------------------------------------------------------+-----------------+
+| CLKFBIN    | design_1_i/zed_ali3_controller_0/U0/zed_ali3_controller_core_l/clock_generator_serdes/CLKFBIN    |            14.1 |
+| clk_fpga_0 | design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]                                      |             8.0 |
+| clk_fpga_1 | design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]                                      |             5.0 |
+| clk_fpga_2 | design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]                                      |            14.1 |
+| mmcmout_x1 | design_1_i/zed_ali3_controller_0/U0/zed_ali3_controller_core_l/clock_generator_serdes/mmcmout_x1 |            14.1 |
+| mmcmout_x7 | design_1_i/zed_ali3_controller_0/U0/zed_ali3_controller_core_l/clock_generator_serdes/mmcmout_x7 |             2.0 |
++------------+--------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++------------------------------------------------------------------------------------------+-----------+
+| Name                                                                                     | Power (W) |
++------------------------------------------------------------------------------------------+-----------+
+| design_1_wrapper                                                                         |     1.509 |
+|   design_1_i                                                                             |     1.482 |
+|     axi_quad_spi_0                                                                       |     0.004 |
+|       U0                                                                                 |     0.004 |
+|         NO_DUAL_QUAD_MODE.QSPI_NORMAL                                                    |     0.004 |
+|           QSPI_LEGACY_MD_GEN.AXI_LITE_IPIF_I                                             |    <0.001 |
+|             I_SLAVE_ATTACHMENT                                                           |    <0.001 |
+|               I_DECODER                                                                  |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[10].MULTIPLE_CES_THIS_CS_GEN.CE_I           |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[11].MULTIPLE_CES_THIS_CS_GEN.CE_I           |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[12].MULTIPLE_CES_THIS_CS_GEN.CE_I           |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[13].MULTIPLE_CES_THIS_CS_GEN.CE_I           |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[14].MULTIPLE_CES_THIS_CS_GEN.CE_I           |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[1].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[3].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[4].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[5].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[8].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[0].PER_CE_GEN[9].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[1].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[1].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[2].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|                 MEM_DECODE_GEN[2].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I            |    <0.001 |
+|           QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I                                       |     0.003 |
+|             CONTROL_REG_I                                                                |    <0.001 |
+|             FIFO_EXISTS.CLK_CROSS_I                                                      |    <0.001 |
+|             FIFO_EXISTS.FIFO_IF_MODULE_I                                                 |    <0.001 |
+|             FIFO_EXISTS.RX_FIFO_EMPTY_SYNC_AXI_2_SPI_CDC                                 |    <0.001 |
+|             FIFO_EXISTS.RX_FIFO_FULL_CNTR_I                                              |    <0.001 |
+|             FIFO_EXISTS.RX_FIFO_FULL_SYNCED_SPI_2_AXI_CDC                                |    <0.001 |
+|             FIFO_EXISTS.RX_FIFO_II                                                       |    <0.001 |
+|               USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM                             |    <0.001 |
+|                 inst_fifo_gen                                                            |    <0.001 |
+|                   gconvfifo.rf                                                           |    <0.001 |
+|                     grf.rf                                                               |    <0.001 |
+|                       gntv_or_sync_fifo.gcx.clkx                                         |    <0.001 |
+|                         gnxpm_cdc.gsync_stage[1].rd_stg_inst                             |    <0.001 |
+|                         gnxpm_cdc.gsync_stage[1].wr_stg_inst                             |    <0.001 |
+|                         gnxpm_cdc.gsync_stage[2].rd_stg_inst                             |    <0.001 |
+|                         gnxpm_cdc.gsync_stage[2].wr_stg_inst                             |    <0.001 |
+|                       gntv_or_sync_fifo.gl0.rd                                           |    <0.001 |
+|                         gr1.gr1_int.rfwft                                                |    <0.001 |
+|                         gras.rsts                                                        |    <0.001 |
+|                         rpntr                                                            |    <0.001 |
+|                       gntv_or_sync_fifo.gl0.wr                                           |    <0.001 |
+|                         gwas.wsts                                                        |    <0.001 |
+|                         wpntr                                                            |    <0.001 |
+|                       gntv_or_sync_fifo.mem                                              |    <0.001 |
+|                         gdm.dm_gen.dm                                                    |    <0.001 |
+|                           RAM_reg_0_15_0_5                                               |    <0.001 |
+|                           RAM_reg_0_15_12_15                                             |    <0.001 |
+|                           RAM_reg_0_15_6_11                                              |    <0.001 |
+|                       rstblk                                                             |    <0.001 |
+|                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst         |    <0.001 |
+|                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst         |    <0.001 |
+|                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst         |    <0.001 |
+|                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst         |    <0.001 |
+|             FIFO_EXISTS.TX_FIFO_EMPTY_CNTR_I                                             |    <0.001 |
+|             FIFO_EXISTS.TX_FIFO_II                                                       |    <0.001 |
+|               USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM                             |    <0.001 |
+|                 inst_fifo_gen                                                            |    <0.001 |
+|                   gconvfifo.rf                                                           |    <0.001 |
+|                     grf.rf                                                               |    <0.001 |
+|                       gntv_or_sync_fifo.gcx.clkx                                         |    <0.001 |
+|                         gnxpm_cdc.gsync_stage[1].rd_stg_inst                             |    <0.001 |
+|                         gnxpm_cdc.gsync_stage[1].wr_stg_inst                             |    <0.001 |
+|                         gnxpm_cdc.gsync_stage[2].rd_stg_inst                             |    <0.001 |
+|                         gnxpm_cdc.gsync_stage[2].wr_stg_inst                             |    <0.001 |
+|                       gntv_or_sync_fifo.gl0.rd                                           |    <0.001 |
+|                         gr1.gr1_int.rfwft                                                |    <0.001 |
+|                         gras.rsts                                                        |    <0.001 |
+|                         rpntr                                                            |    <0.001 |
+|                       gntv_or_sync_fifo.gl0.wr                                           |    <0.001 |
+|                         gwas.wsts                                                        |    <0.001 |
+|                         wpntr                                                            |    <0.001 |
+|                       gntv_or_sync_fifo.mem                                              |    <0.001 |
+|                         gdm.dm_gen.dm                                                    |    <0.001 |
+|                           RAM_reg_0_15_0_5                                               |    <0.001 |
+|                           RAM_reg_0_15_12_15                                             |    <0.001 |
+|                           RAM_reg_0_15_6_11                                              |    <0.001 |
+|                       rstblk                                                             |    <0.001 |
+|                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst         |    <0.001 |
+|                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst         |    <0.001 |
+|                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst         |    <0.001 |
+|                         ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst         |    <0.001 |
+|             INTERRUPT_CONTROL_I                                                          |    <0.001 |
+|             LOGIC_FOR_MD_0_GEN.SPI_MODULE_I                                              |    <0.001 |
+|             RESET_SYNC_AXI_SPI_CLK_INST                                                  |    <0.001 |
+|             SOFT_RESET_I                                                                 |    <0.001 |
+|             STATUS_REG_MODE_0_GEN.STATUS_SLAVE_SEL_REG_I                                 |    <0.001 |
+|     axi_vdma_0                                                                           |     0.017 |
+|       U0                                                                                 |     0.017 |
+|         AXI_LITE_REG_INTERFACE_I                                                         |     0.002 |
+|           GEN_AXI_LITE_IF.AXI_LITE_IF_I                                                  |     0.001 |
+|             GEN_LITE_IS_ASYNC.GEN_MM2S_ONLY_ASYNC_LITE_ACCESS.LITE_WVALID_MM2S_CDC_I     |    <0.001 |
+|         GEN_SPRT_FOR_MM2S.ADDR32.I_MM2S_DMA_MNGR                                         |     0.001 |
+|           I_CMDSTS                                                                       |    <0.001 |
+|           I_SM                                                                           |    <0.001 |
+|           I_STS_MNGR                                                                     |    <0.001 |
+|           VIDEO_GENLOCK_I                                                                |    <0.001 |
+|           VIDEO_REG_I                                                                    |    <0.001 |
+|             GEN_REGISTER_DIRECT.GEN_REGDIRECT_DRES.VIDREGISTER_I                         |    <0.001 |
+|         GEN_SPRT_FOR_MM2S.MM2S_FSYNC_I                                                   |    <0.001 |
+|         GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I                                              |    <0.001 |
+|           GEN_LINEBUF_NO_SOF.GEN_FOR_ASYNC.ALL_LINES_XFRED_P_S_CDC_I                     |    <0.001 |
+|           GEN_LINEBUF_NO_SOF.GEN_FOR_ASYNC.HALT_CDC_I                                    |    <0.001 |
+|           GEN_LINEBUF_NO_SOF.GEN_FOR_ASYNC.SHUTDOWN_RST_CDC_I                            |    <0.001 |
+|           GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO |    <0.001 |
+|             fg_builtin_fifo_inst                                                         |    <0.001 |
+|               inst_fifo_gen                                                              |    <0.001 |
+|                 gconvfifo.rf                                                             |    <0.001 |
+|                   gbi.bi                                                                 |    <0.001 |
+|                     g7ser_birst.rstbt                                                    |    <0.001 |
+|                     v7_bi_fifo.fblk                                                      |    <0.001 |
+|                       gextw[10].gnll_fifo.inst_extd                                      |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|                       gextw[1].gnll_fifo.inst_extd                                       |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|                       gextw[2].gnll_fifo.inst_extd                                       |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|                       gextw[3].gnll_fifo.inst_extd                                       |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|                       gextw[4].gnll_fifo.inst_extd                                       |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|                       gextw[5].gnll_fifo.inst_extd                                       |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|                       gextw[6].gnll_fifo.inst_extd                                       |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|                       gextw[7].gnll_fifo.inst_extd                                       |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|                       gextw[8].gnll_fifo.inst_extd                                       |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|                       gextw[9].gnll_fifo.inst_extd                                       |    <0.001 |
+|                         gonep.inst_prim                                                  |    <0.001 |
+|           GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.I_MSTR_SKID                                  |    <0.001 |
+|         GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I                                         |    <0.001 |
+|           GEN_REG_DIRECT_MODE.REGDIRECT_I                                                |    <0.001 |
+|           I_DMA_REGISTER                                                                 |    <0.001 |
+|           LITE_READ_MUX_I                                                                |     0.000 |
+|         GEN_SPRT_FOR_MM2S.MM2S_SOF_I                                                     |    <0.001 |
+|         GEN_SPRT_FOR_MM2S.MM2S_VID_CDC_I                                                 |    <0.001 |
+|           GEN_CDC_FOR_ASYNC.FSYNC_OUT_CDC_I                                              |    <0.001 |
+|           GEN_CDC_FOR_ASYNC.SOF_CDC_I                                                    |    <0.001 |
+|         I_AXI_DMA_INTRPT                                                                 |    <0.001 |
+|         I_PRMRY_DATAMOVER                                                                |     0.012 |
+|           GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER                                              |     0.012 |
+|             GEN_INCLUDE_MM2S_DRE.I_DRE_16_to_64                                          |    <0.001 |
+|             GEN_INCLUDE_MM2S_SF.I_RD_SF                                                  |     0.009 |
+|               INCLUDE_DRE_CNTL.I_DRE_CNTL_FIFO                                           |    <0.001 |
+|                 USE_SRL_FIFO.I_SYNC_FIFO                                                 |    <0.001 |
+|                   I_SRL_FIFO_RBU_F                                                       |    <0.001 |
+|                     CNTR_INCR_DECR_ADDN_F_I                                              |    <0.001 |
+|                     DYNSHREG_F_I                                                         |    <0.001 |
+|               I_DATA_FIFO                                                                |     0.009 |
+|                 BLK_MEM.I_SYNC_FIFOGEN_FIFO                                              |     0.009 |
+|                   FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM                                      |     0.009 |
+|                     inst_fifo_gen                                                        |     0.009 |
+|                       gconvfifo.rf                                                       |     0.009 |
+|                         grf.rf                                                           |     0.009 |
+|                           gntv_or_sync_fifo.gl0.rd                                       |    <0.001 |
+|                             gr1.gr1_int.rfwft                                            |    <0.001 |
+|                             grss.gdc.dc                                                  |    <0.001 |
+|                               gsym_dc.dc                                                 |    <0.001 |
+|                             grss.rsts                                                    |    <0.001 |
+|                               c1                                                         |    <0.001 |
+|                               c2                                                         |    <0.001 |
+|                             rpntr                                                        |    <0.001 |
+|                           gntv_or_sync_fifo.gl0.wr                                       |    <0.001 |
+|                             gwss.wsts                                                    |    <0.001 |
+|                               c0                                                         |    <0.001 |
+|                               c1                                                         |    <0.001 |
+|                             wpntr                                                        |    <0.001 |
+|                           gntv_or_sync_fifo.mem                                          |     0.009 |
+|                             gbm.gbmg.gbmgb.ngecc.bmg                                     |     0.009 |
+|                               inst_blk_mem_gen                                           |     0.009 |
+|                                 gnbram.gnativebmg.native_blk_mem_gen                     |     0.009 |
+|                                   valid.cstr                                             |     0.009 |
+|                                     ramloop[0].ram.r                                     |    <0.001 |
+|                                       prim_noinit.ram                                    |    <0.001 |
+|                                     ramloop[1].ram.r                                     |     0.002 |
+|                                       prim_noinit.ram                                    |     0.002 |
+|                                     ramloop[2].ram.r                                     |     0.002 |
+|                                       prim_noinit.ram                                    |     0.002 |
+|                                     ramloop[3].ram.r                                     |     0.002 |
+|                                       prim_noinit.ram                                    |     0.002 |
+|                                     ramloop[4].ram.r                                     |     0.002 |
+|                                       prim_noinit.ram                                    |     0.002 |
+|             I_ADDR_CNTL                                                                  |    <0.001 |
+|               GEN_ADDR_FIFO.I_ADDR_QUAL_FIFO                                             |    <0.001 |
+|                 USE_SRL_FIFO.I_SYNC_FIFO                                                 |    <0.001 |
+|                   I_SRL_FIFO_RBU_F                                                       |    <0.001 |
+|                     CNTR_INCR_DECR_ADDN_F_I                                              |    <0.001 |
+|                     DYNSHREG_F_I                                                         |    <0.001 |
+|             I_CMD_STATUS                                                                 |    <0.001 |
+|               GEN_INCLUDE_STATUS_FIFO.I_STS_FIFO                                         |    <0.001 |
+|                 USE_SRL_FIFO.I_SYNC_FIFO                                                 |    <0.001 |
+|                   I_SRL_FIFO_RBU_F                                                       |    <0.001 |
+|                     CNTR_INCR_DECR_ADDN_F_I                                              |    <0.001 |
+|                     DYNSHREG_F_I                                                         |    <0.001 |
+|               I_CMD_FIFO                                                                 |    <0.001 |
+|                 USE_SRL_FIFO.I_SYNC_FIFO                                                 |    <0.001 |
+|                   I_SRL_FIFO_RBU_F                                                       |    <0.001 |
+|                     CNTR_INCR_DECR_ADDN_F_I                                              |    <0.001 |
+|                     DYNSHREG_F_I                                                         |    <0.001 |
+|             I_MSTR_PCC                                                                   |     0.001 |
+|             I_RD_DATA_CNTL                                                               |    <0.001 |
+|               GEN_DATA_CNTL_FIFO.I_DATA_CNTL_FIFO                                        |    <0.001 |
+|                 USE_SRL_FIFO.I_SYNC_FIFO                                                 |    <0.001 |
+|                   I_SRL_FIFO_RBU_F                                                       |    <0.001 |
+|                     CNTR_INCR_DECR_ADDN_F_I                                              |    <0.001 |
+|                     DYNSHREG_F_I                                                         |    <0.001 |
+|             I_RD_STATUS_CNTLR                                                            |    <0.001 |
+|             I_RESET                                                                      |    <0.001 |
+|         I_RST_MODULE                                                                     |    <0.001 |
+|           GEN_RESET_FOR_MM2S.RESET_I                                                     |    <0.001 |
+|             GEN_MIN_FOR_ASYNC.AXIS_CLR_CDC_I                                             |    <0.001 |
+|             GEN_MIN_FOR_ASYNC.AXIS_IDLE_CDC_I                                            |    <0.001 |
+|             GEN_MIN_FOR_ASYNC.AXIS_MIN_CDC_I                                             |    <0.001 |
+|             GEN_MIN_FOR_ASYNC.AXIS_RESET_CDC_I                                           |    <0.001 |
+|             GEN_MIN_FOR_ASYNC.LITE_CLR_CDC_I                                             |    <0.001 |
+|             GEN_MIN_FOR_ASYNC.LITE_IDLE_CDC_I                                            |    <0.001 |
+|             GEN_MIN_FOR_ASYNC.LITE_MIN_CDC_I                                             |    <0.001 |
+|             GEN_MIN_FOR_ASYNC.LITE_RESET_CDC_I                                           |    <0.001 |
+|             GEN_RESET_FOR_ASYNC.AXIS_RESET_CDC_I                                         |    <0.001 |
+|             GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I                                         |    <0.001 |
+|     axis_subset_converter_0                                                              |     0.000 |
+|       inst                                                                               |     0.000 |
+|     processing_system7_0                                                                 |     1.185 |
+|       inst                                                                               |     1.185 |
+|     ps7_0_axi_periph                                                                     |     0.012 |
+|       m03_couplers                                                                       |     0.001 |
+|         auto_cc                                                                          |     0.001 |
+|           inst                                                                           |     0.001 |
+|             gen_clock_conv.gen_async_lite_conv.ar_handshake                              |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.aw_handshake                              |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.b_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.r_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.w_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|       m04_couplers                                                                       |     0.001 |
+|         auto_cc                                                                          |     0.001 |
+|           inst                                                                           |     0.001 |
+|             gen_clock_conv.gen_async_lite_conv.ar_handshake                              |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.aw_handshake                              |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.b_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.r_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.w_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|       m05_couplers                                                                       |     0.001 |
+|         auto_cc                                                                          |     0.001 |
+|           inst                                                                           |     0.001 |
+|             gen_clock_conv.gen_async_lite_conv.ar_handshake                              |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.aw_handshake                              |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.b_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.r_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.w_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|       m06_couplers                                                                       |     0.001 |
+|         auto_cc                                                                          |     0.001 |
+|           inst                                                                           |     0.001 |
+|             gen_clock_conv.gen_async_lite_conv.ar_handshake                              |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.aw_handshake                              |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.b_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.r_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|             gen_clock_conv.gen_async_lite_conv.w_handshake                               |    <0.001 |
+|               handshake                                                                  |    <0.001 |
+|                 xpm_cdc_single_dest2src_inst                                             |    <0.001 |
+|                 xpm_cdc_single_src2dest_inst                                             |    <0.001 |
+|       s00_couplers                                                                       |     0.005 |
+|         auto_pc                                                                          |     0.005 |
+|           inst                                                                           |     0.005 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s                                         |     0.005 |
+|               RD.ar_channel_0                                                            |    <0.001 |
+|                 ar_cmd_fsm_0                                                             |    <0.001 |
+|                 cmd_translator_0                                                         |    <0.001 |
+|                   incr_cmd_0                                                             |    <0.001 |
+|                   wrap_cmd_0                                                             |    <0.001 |
+|               RD.r_channel_0                                                             |     0.001 |
+|                 rd_data_fifo_0                                                           |    <0.001 |
+|                 transaction_fifo_0                                                       |    <0.001 |
+|               SI_REG                                                                     |     0.002 |
+|                 ar_pipe                                                                  |    <0.001 |
+|                 aw_pipe                                                                  |    <0.001 |
+|                 b_pipe                                                                   |    <0.001 |
+|                 r_pipe                                                                   |    <0.001 |
+|               WR.aw_channel_0                                                            |    <0.001 |
+|                 aw_cmd_fsm_0                                                             |    <0.001 |
+|                 cmd_translator_0                                                         |    <0.001 |
+|                   incr_cmd_0                                                             |    <0.001 |
+|                   wrap_cmd_0                                                             |    <0.001 |
+|               WR.b_channel_0                                                             |    <0.001 |
+|                 bid_fifo_0                                                               |    <0.001 |
+|                 bresp_fifo_0                                                             |    <0.001 |
+|         s00_data_fifo                                                                    |     0.000 |
+|           inst                                                                           |     0.000 |
+|       xbar                                                                               |     0.001 |
+|         inst                                                                             |     0.001 |
+|           gen_sasd.crossbar_sasd_0                                                       |     0.001 |
+|             addr_arbiter_inst                                                            |    <0.001 |
+|             gen_decerr.decerr_slave_inst                                                 |    <0.001 |
+|             reg_slice_r                                                                  |    <0.001 |
+|             splitter_ar                                                                  |    <0.001 |
+|             splitter_aw                                                                  |    <0.001 |
+|     ps7_0_axi_periph1                                                                    |    <0.001 |
+|       s00_couplers                                                                       |    <0.001 |
+|         auto_pc                                                                          |    <0.001 |
+|           inst                                                                           |    <0.001 |
+|             gen_axi4_axi3.axi3_conv_inst                                                 |    <0.001 |
+|               USE_READ.USE_SPLIT_R.read_addr_inst                                        |    <0.001 |
+|                 USE_R_CHANNEL.cmd_queue                                                  |    <0.001 |
+|                   inst                                                                   |    <0.001 |
+|                     fifo_gen_inst                                                        |    <0.001 |
+|                       inst_fifo_gen                                                      |    <0.001 |
+|                         gconvfifo.rf                                                     |    <0.001 |
+|                           grf.rf                                                         |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
+|                               gr1.gr1_int.rfwft                                          |    <0.001 |
+|                               grss.rsts                                                  |    <0.001 |
+|                               rpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
+|                               gwss.wsts                                                  |    <0.001 |
+|                               wpntr                                                      |    <0.001 |
+|                             gntv_or_sync_fifo.mem                                        |    <0.001 |
+|                               gdm.dm_gen.dm                                              |    <0.001 |
+|                                 RAM_reg_0_31_0_0                                         |    <0.001 |
+|                             rstblk                                                       |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst   |    <0.001 |
+|                               ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst   |    <0.001 |
+|     rst_ps7_0_50M                                                                        |    <0.001 |
+|       U0                                                                                 |    <0.001 |
+|         EXT_LPF                                                                          |    <0.001 |
+|           ACTIVE_LOW_EXT.ACT_LO_EXT                                                      |    <0.001 |
+|         SEQ                                                                              |    <0.001 |
+|           SEQ_COUNTER                                                                    |    <0.001 |
+|     rst_ps7_0_50M1                                                                       |    <0.001 |
+|       U0                                                                                 |    <0.001 |
+|         EXT_LPF                                                                          |    <0.001 |
+|           ACTIVE_LOW_EXT.ACT_LO_EXT                                                      |    <0.001 |
+|         SEQ                                                                              |    <0.001 |
+|           SEQ_COUNTER                                                                    |    <0.001 |
+|     v_axi4s_vid_out_0                                                                    |     0.004 |
+|       inst                                                                               |     0.004 |
+|         COUPLER_INST                                                                     |     0.003 |
+|           FIFO_INST                                                                      |     0.003 |
+|             inst_fifo_gen                                                                |     0.003 |
+|               gconvfifo.rf                                                               |     0.003 |
+|                 grf.rf                                                                   |     0.003 |
+|                   gntv_or_sync_fifo.gcx.clkx                                             |    <0.001 |
+|                     gnxpm_cdc.gsync_stage[1].rd_stg_inst                                 |    <0.001 |
+|                     gnxpm_cdc.gsync_stage[1].wr_stg_inst                                 |    <0.001 |
+|                     gnxpm_cdc.gsync_stage[2].rd_stg_inst                                 |    <0.001 |
+|                     gnxpm_cdc.gsync_stage[2].wr_stg_inst                                 |    <0.001 |
+|                   gntv_or_sync_fifo.gl0.rd                                               |    <0.001 |
+|                     gr1.gr1_int.rfwft                                                    |    <0.001 |
+|                     gr1.grdc2.rdc                                                        |    <0.001 |
+|                     gras.rsts                                                            |    <0.001 |
+|                       c0                                                                 |    <0.001 |
+|                       c1                                                                 |    <0.001 |
+|                     rpntr                                                                |    <0.001 |
+|                   gntv_or_sync_fifo.gl0.wr                                               |    <0.001 |
+|                     gwas.wsts                                                            |    <0.001 |
+|                       c1                                                                 |    <0.001 |
+|                       c2                                                                 |    <0.001 |
+|                     wpntr                                                                |    <0.001 |
+|                   gntv_or_sync_fifo.mem                                                  |     0.002 |
+|                     gbm.gbmg.gbmgb.ngecc.bmg                                             |     0.002 |
+|                       inst_blk_mem_gen                                                   |     0.002 |
+|                         gnbram.gnativebmg.native_blk_mem_gen                             |     0.002 |
+|                           valid.cstr                                                     |     0.002 |
+|                             has_mux_b.B                                                  |    <0.001 |
+|                             ramloop[0].ram.r                                             |    <0.001 |
+|                               prim_noinit.ram                                            |    <0.001 |
+|                             ramloop[1].ram.r                                             |    <0.001 |
+|                               prim_noinit.ram                                            |    <0.001 |
+|                             ramloop[2].ram.r                                             |    <0.001 |
+|                               prim_noinit.ram                                            |    <0.001 |
+|                             ramloop[3].ram.r                                             |    <0.001 |
+|                               prim_noinit.ram                                            |    <0.001 |
+|                             ramloop[4].ram.r                                             |    <0.001 |
+|                               prim_noinit.ram                                            |    <0.001 |
+|                             ramloop[5].ram.r                                             |    <0.001 |
+|                               prim_noinit.ram                                            |    <0.001 |
+|                   rstblk                                                                 |    <0.001 |
+|                     ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].rrst_inst             |    <0.001 |
+|                     ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[1].wrst_inst             |    <0.001 |
+|                     ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst             |    <0.001 |
+|                     ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst             |    <0.001 |
+|         FORMATTER_INST                                                                   |    <0.001 |
+|         SYNC_INST                                                                        |    <0.001 |
+|     v_mix_0                                                                              |     0.046 |
+|       inst                                                                               |     0.046 |
+|         AXIvideo2MultiPixStr_1_U0                                                        |     0.003 |
+|           grp_reg_unsigned_short_s_fu_295                                                |    <0.001 |
+|           grp_reg_unsigned_short_s_fu_301                                                |    <0.001 |
+|         AXIvideo2MultiPixStr_2_U0                                                        |     0.001 |
+|           grp_reg_unsigned_short_s_fu_303                                                |    <0.001 |
+|           grp_reg_unsigned_short_s_fu_309                                                |    <0.001 |
+|         AXIvideo2MultiPixStr_3_U0                                                        |     0.003 |
+|           grp_reg_unsigned_short_s_fu_295                                                |    <0.001 |
+|           grp_reg_unsigned_short_s_fu_301                                                |    <0.001 |
+|         AXIvideo2MultiPixStr_U0                                                          |     0.002 |
+|           grp_reg_unsigned_short_s_fu_295                                                |    <0.001 |
+|           grp_reg_unsigned_short_s_fu_301                                                |    <0.001 |
+|         Block_crit_edge626_1_U0                                                          |    <0.001 |
+|         Block_crit_edge626_2_U0                                                          |    <0.001 |
+|         Block_crit_edge626_3_U0                                                          |    <0.001 |
+|         Block_crit_edge626_U0                                                            |    <0.001 |
+|         HwReg_height_cast4_l_1_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_heighxdS_ram                                  |    <0.001 |
+|         HwReg_height_cast4_l_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_heighyd2_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_10_U                                                        |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layer1iI_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_11_U                                                        |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerXh4_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_12_U                                                        |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerMgi_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_13_U                                                        |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerIfE_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_14_U                                                        |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerwdI_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_15_U                                                        |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layervdy_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_16_U                                                        |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerudo_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_17_U                                                        |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layertde_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_1_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerbMq_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_2_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerbIp_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_3_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerbAo_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_4_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerbtn_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_5_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerbpm_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_6_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerbll_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_7_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerbdk_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_8_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layer9j0_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_9_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layer5jm_ram                                  |    <0.001 |
+|         HwReg_layerEnable_by_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerbQq_ram                                  |    <0.001 |
+|         HwReg_layerEnable_ca_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerBew_ram                                  |    <0.001 |
+|         HwReg_layerEnable_ch_1_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerfYi_ram                                  |    <0.001 |
+|         HwReg_layerEnable_ch_2_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layereOg_ram                                  |    <0.001 |
+|         HwReg_layerEnable_ch_3_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerdEe_ram                                  |    <0.001 |
+|         HwReg_layerEnable_ch_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerg8j_ram                                  |    <0.001 |
+|         HwReg_layerStartX_1_s_48_U                                                       |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerhbi_ram                                  |    <0.001 |
+|         HwReg_layerStartX_1_s_U                                                          |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layersc4_ram                                  |    <0.001 |
+|         HwReg_layerStartX_2_s_47_U                                                       |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layeribs_ram                                  |    <0.001 |
+|         HwReg_layerStartX_2_s_U                                                          |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerrcU_ram                                  |    <0.001 |
+|         HwReg_layerStartX_3_s_46_U                                                       |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerjbC_ram                                  |    <0.001 |
+|         HwReg_layerStartX_3_s_U                                                          |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerqcK_ram                                  |    <0.001 |
+|         HwReg_layerStartY_1_s_45_U                                                       |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerkbM_ram                                  |    <0.001 |
+|         HwReg_layerStartY_1_s_U                                                          |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerpcA_ram                                  |    <0.001 |
+|         HwReg_layerStartY_2_s_44_U                                                       |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerlbW_ram                                  |    <0.001 |
+|         HwReg_layerStartY_2_s_U                                                          |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerocq_ram                                  |    <0.001 |
+|         HwReg_layerStartY_3_s_43_U                                                       |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layermb6_ram                                  |    <0.001 |
+|         HwReg_layerStartY_3_s_U                                                          |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_layerncg_ram                                  |    <0.001 |
+|         HwReg_width_cast5_lo_1_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_widthzec_ram                                  |    <0.001 |
+|         HwReg_width_cast5_lo_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_HwReg_widthAem_ram                                  |    <0.001 |
+|         MultiPixStream2AXIvi_U0                                                          |     0.003 |
+|           grp_reg_unsigned_short_s_fu_245                                                |    <0.001 |
+|           grp_reg_unsigned_short_s_fu_251                                                |    <0.001 |
+|           mapComp_0_U                                                                    |    <0.001 |
+|             design_1_v_mix_0_0_MultiPixStream2AXcud_rom_U                                |    <0.001 |
+|           v_mix_mux_32_8_1_U335                                                          |    <0.001 |
+|           v_mix_mux_32_8_1_U336                                                          |    <0.001 |
+|           v_mix_mux_32_8_1_U337                                                          |    <0.001 |
+|         out420_V_val_0_V_U                                                               |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_out420_V_vab3s_ram                                  |    <0.001 |
+|         out420_V_val_1_V_U                                                               |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_out420_V_vab4t_ram                                  |    <0.001 |
+|         out420_V_val_2_V_U                                                               |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_out420_V_vab5t_ram                                  |    <0.001 |
+|         out422_V_val_0_V_U                                                               |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_out422_V_vab0s_ram                                  |    <0.001 |
+|         out422_V_val_1_V_U                                                               |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_out422_V_vab1s_ram                                  |    <0.001 |
+|         out422_V_val_2_V_U                                                               |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_out422_V_vab2s_ram                                  |    <0.001 |
+|         outLayer0_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer0_VNgs_ram                                  |    <0.001 |
+|         outLayer0_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer0_VOgC_ram                                  |    <0.001 |
+|         outLayer0_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer0_VPgM_ram                                  |    <0.001 |
+|         outLayer1_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer1_Vbak_ram                                  |    <0.001 |
+|         outLayer1_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer1_Vbbk_ram                                  |    <0.001 |
+|         outLayer1_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer1_Vbck_ram                                  |    <0.001 |
+|         outLayer2_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer2_Vbxn_ram                                  |    <0.001 |
+|         outLayer2_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer2_Vbyn_ram                                  |    <0.001 |
+|         outLayer2_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer2_Vbzo_ram                                  |    <0.001 |
+|         outLayer3_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer3_VbUr_ram                                  |    <0.001 |
+|         outLayer3_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer3_VbVr_ram                                  |    <0.001 |
+|         outLayer3_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outLayer3_VbWr_ram                                  |    <0.001 |
+|         outYuv_V_val_0_V_U                                                               |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outYuv_V_vabXr_ram                                  |    <0.001 |
+|         outYuv_V_val_1_V_U                                                               |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outYuv_V_vabYs_ram                                  |    <0.001 |
+|         outYuv_V_val_2_V_U                                                               |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_outYuv_V_vabZs_ram                                  |    <0.001 |
+|         srcLayer0Yuv422_V_va_1_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer0YuGfk_ram                                  |    <0.001 |
+|         srcLayer0Yuv422_V_va_2_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer0YuHfu_ram                                  |    <0.001 |
+|         srcLayer0Yuv422_V_va_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer0YuFfa_ram                                  |    <0.001 |
+|         srcLayer0Yuv_V_val_0_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer0YuJfO_ram                                  |    <0.001 |
+|         srcLayer0Yuv_V_val_1_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer0YuKfY_ram                                  |    <0.001 |
+|         srcLayer0Yuv_V_val_2_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer0YuLf8_ram                                  |    <0.001 |
+|         srcLayer0_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer0_VCeG_ram                                  |    <0.001 |
+|         srcLayer0_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer0_VDeQ_ram                                  |    <0.001 |
+|         srcLayer0_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer0_VEe0_ram                                  |    <0.001 |
+|         srcLayer1Rgb_V_val_0_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1Rg2iS_ram                                  |    <0.001 |
+|         srcLayer1Rgb_V_val_1_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1Rg3i2_ram                                  |    <0.001 |
+|         srcLayer1Rgb_V_val_2_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1Rg4jc_ram                                  |    <0.001 |
+|         srcLayer1Yuv422_V_va_1_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1YuVhK_ram                                  |    <0.001 |
+|         srcLayer1Yuv422_V_va_2_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1YuWhU_ram                                  |    <0.001 |
+|         srcLayer1Yuv422_V_va_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1YuUhA_ram                                  |    <0.001 |
+|         srcLayer1Yuv_V_val_0_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1YuYie_ram                                  |    <0.001 |
+|         srcLayer1Yuv_V_val_1_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1YuZio_ram                                  |    <0.001 |
+|         srcLayer1Yuv_V_val_2_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1Yu0iy_ram                                  |    <0.001 |
+|         srcLayer1_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1_VRg6_ram                                  |    <0.001 |
+|         srcLayer1_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1_VShg_ram                                  |    <0.001 |
+|         srcLayer1_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1_VThq_ram                                  |    <0.001 |
+|         srcLayer1x_V_val_0_s_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1x_6jw_ram                                  |    <0.001 |
+|         srcLayer1x_V_val_1_s_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1x_7jG_ram                                  |    <0.001 |
+|         srcLayer1x_V_val_2_s_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer1x_8jQ_ram                                  |    <0.001 |
+|         srcLayer2Rgb_V_val_0_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2Rgbqm_ram                                  |    <0.001 |
+|         srcLayer2Rgb_V_val_1_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2Rgbrm_ram                                  |    <0.001 |
+|         srcLayer2Rgb_V_val_2_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2Rgbsm_ram                                  |    <0.001 |
+|         srcLayer2Yuv422_V_va_1_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2Yubjl_ram                                  |    <0.001 |
+|         srcLayer2Yuv422_V_va_2_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2Yubkl_ram                                  |    <0.001 |
+|         srcLayer2Yuv422_V_va_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2Yubil_ram                                  |    <0.001 |
+|         srcLayer2Yuv_V_val_0_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2Yubml_ram                                  |    <0.001 |
+|         srcLayer2Yuv_V_val_1_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2Yubnm_ram                                  |    <0.001 |
+|         srcLayer2Yuv_V_val_2_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2Yubom_ram                                  |    <0.001 |
+|         srcLayer2_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2_Vbfk_ram                                  |    <0.001 |
+|         srcLayer2_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2_Vbgk_ram                                  |    <0.001 |
+|         srcLayer2_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2_Vbhl_ram                                  |    <0.001 |
+|         srcLayer2x_V_val_0_s_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2x_bun_ram                                  |    <0.001 |
+|         srcLayer2x_V_val_1_s_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2x_bvn_ram                                  |    <0.001 |
+|         srcLayer2x_V_val_2_s_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer2x_bwn_ram                                  |    <0.001 |
+|         srcLayer3Rgb_V_val_0_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3RgbNq_ram                                  |    <0.001 |
+|         srcLayer3Rgb_V_val_1_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3RgbOq_ram                                  |    <0.001 |
+|         srcLayer3Rgb_V_val_2_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3RgbPq_ram                                  |    <0.001 |
+|         srcLayer3Yuv422_V_va_1_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3YubGp_ram                                  |    <0.001 |
+|         srcLayer3Yuv422_V_va_2_U                                                         |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3YubHp_ram                                  |    <0.001 |
+|         srcLayer3Yuv422_V_va_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3YubFp_ram                                  |    <0.001 |
+|         srcLayer3Yuv_V_val_0_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3YubJp_ram                                  |    <0.001 |
+|         srcLayer3Yuv_V_val_1_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3YubKp_ram                                  |    <0.001 |
+|         srcLayer3Yuv_V_val_2_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3YubLp_ram                                  |    <0.001 |
+|         srcLayer3_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3_VbCo_ram                                  |    <0.001 |
+|         srcLayer3_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3_VbDo_ram                                  |    <0.001 |
+|         srcLayer3_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3_VbEo_ram                                  |    <0.001 |
+|         srcLayer3x_V_val_0_s_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3x_bRq_ram                                  |    <0.001 |
+|         srcLayer3x_V_val_1_s_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3x_bSr_ram                                  |    <0.001 |
+|         srcLayer3x_V_val_2_s_U                                                           |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_srcLayer3x_bTr_ram                                  |    <0.001 |
+|         start_for_Block_cb6t_U                                                           |    <0.001 |
+|         start_for_Block_cb7t_U                                                           |    <0.001 |
+|         start_for_Block_cb8t_U                                                           |    <0.001 |
+|         start_for_MultiPib9t_U                                                           |    <0.001 |
+|         tmp_40_loc_channel_U                                                             |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_tmp_40_loc_QgW_ram                                  |    <0.001 |
+|         tmp_42_loc_channel_U                                                             |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_tmp_42_loc_bek_ram                                  |    <0.001 |
+|         tmp_44_loc_channel_U                                                             |    <0.001 |
+|           U_design_1_v_mix_0_0_v_mix_tmp_44_loc_bBo_ram                                  |    <0.001 |
+|         v_mix_420_to_42279_U0                                                            |    <0.001 |
+|         v_mix_420_to_42283_U0                                                            |    <0.001 |
+|         v_mix_420_to_42289_U0                                                            |    <0.001 |
+|         v_mix_420_to_42294_U0                                                            |    <0.001 |
+|         v_mix_422_to_420_U0                                                              |    <0.001 |
+|         v_mix_422_to_44480_U0                                                            |    <0.001 |
+|         v_mix_422_to_44484_U0                                                            |    <0.001 |
+|         v_mix_422_to_44490_U0                                                            |    <0.001 |
+|         v_mix_422_to_44495_U0                                                            |    <0.001 |
+|         v_mix_444_to_422_U0                                                              |    <0.001 |
+|         v_mix_CTRL_s_axi_U                                                               |     0.003 |
+|         v_mix_core_alpha87_U0                                                            |     0.002 |
+|           grp_reg_unsigned_short_s_fu_297                                                |    <0.001 |
+|           v_mix_ama_submulabkb_U137                                                      |    <0.001 |
+|             design_1_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U                            |    <0.001 |
+|           v_mix_ama_submulabkb_U138                                                      |    <0.001 |
+|             design_1_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U                            |    <0.001 |
+|           v_mix_ama_submulabkb_U139                                                      |    <0.001 |
+|             design_1_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U                            |    <0.001 |
+|         v_mix_core_alpha93_U0                                                            |     0.003 |
+|           grp_reg_unsigned_short_s_fu_243                                                |    <0.001 |
+|           v_mix_ama_submulabkb_x_U215                                                    |    <0.001 |
+|             design_1_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U                            |    <0.001 |
+|           v_mix_ama_submulabkb_x_U216                                                    |    <0.001 |
+|             design_1_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U                            |    <0.001 |
+|           v_mix_ama_submulabkb_x_U217                                                    |    <0.001 |
+|             design_1_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U                            |    <0.001 |
+|         v_mix_core_alpha98_U0                                                            |     0.004 |
+|           grp_reg_unsigned_short_s_fu_233                                                |    <0.001 |
+|           v_mix_ama_submulabkb_x_U290                                                    |    <0.001 |
+|             design_1_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U                            |    <0.001 |
+|           v_mix_ama_submulabkb_x_U291                                                    |    <0.001 |
+|             design_1_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U                            |    <0.001 |
+|           v_mix_ama_submulabkb_x_U292                                                    |    <0.001 |
+|             design_1_v_mix_0_0_v_mix_ama_submulabkb_DSP48_0_U                            |    <0.001 |
+|         v_mix_entry162_U0                                                                |    <0.001 |
+|         v_mix_rgb2yuv_false_U0                                                           |    <0.001 |
+|         v_mix_upsample86_U0                                                              |    <0.001 |
+|         v_mix_upsample92_U0                                                              |    <0.001 |
+|         v_mix_upsample97_U0                                                              |    <0.001 |
+|         v_mix_yuv2rgb81_U0                                                               |    <0.001 |
+|         v_mix_yuv2rgb85_U0                                                               |    <0.001 |
+|         v_mix_yuv2rgb91_U0                                                               |    <0.001 |
+|         v_mix_yuv2rgb96_U0                                                               |    <0.001 |
+|     v_tc_0                                                                               |     0.008 |
+|       U0                                                                                 |     0.008 |
+|         U_TC_TOP                                                                         |    <0.001 |
+|           GEN_GENERATOR.U_TC_GEN                                                         |    <0.001 |
+|         U_VIDEO_CTRL                                                                     |     0.008 |
+|           AXI4_LITE_INTERFACE.AXI_LITE_IPIF_I                                            |    <0.001 |
+|             I_SLAVE_ATTACHMENT                                                           |    <0.001 |
+|               I_DECODER                                                                  |    <0.001 |
+|           AXI4_LITE_INTERFACE.CORE_MUX0                                                  |    <0.001 |
+|           AXI4_LITE_INTERFACE.GENR_MUX0                                                  |     0.001 |
+|           AXI4_LITE_INTERFACE.SYNC2PROCCLK_I                                             |    <0.001 |
+|           AXI4_LITE_INTERFACE.SYNC2VIDCLK_I                                              |     0.001 |
+|     v_tpg_0                                                                              |     0.025 |
+|       inst                                                                               |     0.025 |
+|         MultiPixStream2AXIvi_U0                                                          |     0.001 |
+|           grp_reg_unsigned_short_s_fu_189                                                |    <0.001 |
+|           grp_reg_unsigned_short_s_fu_195                                                |    <0.001 |
+|         bckgndYUV_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_bckgndYUV_V3i2_ram                                  |    <0.001 |
+|         bckgndYUV_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_bckgndYUV_V4jc_ram                                  |    <0.001 |
+|         bckgndYUV_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_bckgndYUV_V5jm_ram                                  |    <0.001 |
+|         ovrlayYUV_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_ovrlayYUV_V6jw_ram                                  |    <0.001 |
+|         ovrlayYUV_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_ovrlayYUV_V7jG_ram                                  |    <0.001 |
+|         ovrlayYUV_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_ovrlayYUV_V8jQ_ram                                  |    <0.001 |
+|         tpgBackground_U0                                                                 |     0.018 |
+|           call_ret15_tpgPRBS_fu_670                                                      |    <0.001 |
+|           grp_tpgPatternCheckerBoa_fu_469                                                |    <0.001 |
+|             tpgBarSelRgb_b267_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             tpgCheckerBoardArray_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckerocq_rom_U                              |    <0.001 |
+|           grp_tpgPatternColorBars_fu_556                                                 |    <0.001 |
+|             tpgBarSelRgb_b265_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             tpgBarSelRgb_r259_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorcud_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_u253_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckertde_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_v250_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckersc4_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_y256_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckerqcK_rom_U                              |    <0.001 |
+|           grp_tpgPatternCrossHatch_fu_535                                                |    <0.001 |
+|             blkYuv_1_U                                                                   |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaEe0_rom_U                              |    <0.001 |
+|             whiYuv_1_U                                                                   |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaDeQ_rom_U                              |    <0.001 |
+|           grp_tpgPatternDPColorRam_fu_580                                                |    <0.001 |
+|           grp_tpgPatternDPColorSqu_fu_424                                                |    <0.001 |
+|             DPtpgBarArray_U                                                              |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorbkb_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_CEA_b_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorhbi_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_CEA_g_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorg8j_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_CEA_r_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorfYi_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_VESA_1_U                                                      |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_VESA_5_U                                                      |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorcud_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_601_u_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorkbM_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_601_v_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorlbW_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_601_y_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoribs_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_709_u_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColormb6_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_709_v_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorncg_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_709_y_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorjbC_rom_U                              |    <0.001 |
+|           grp_tpgPatternHorizontal_fu_615                                                |    <0.001 |
+|           grp_tpgPatternRainbow_fu_395                                                   |     0.007 |
+|             tpgSinTableArray_9bi_1_U                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternRainbowvdy_rom_U                              |    <0.001 |
+|             v_tpg_mac_muladd_Aem_U41                                                     |     0.001 |
+|               design_1_v_tpg_0_0_v_tpg_mac_muladd_Aem_DSP48_3_U                          |     0.001 |
+|             v_tpg_mul_8ns_8s_wdI_U37                                                     |     0.000 |
+|               design_1_v_tpg_0_0_v_tpg_mul_8ns_8s_wdI_MulnS_0_U                          |     0.000 |
+|           grp_tpgPatternSolidBlack_fu_661                                                |    <0.001 |
+|             blkYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaEe0_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidBlue_fu_625                                                 |    <0.001 |
+|             bluYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternSolidBlZio_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidGreen_fu_634                                                |    <0.001 |
+|             grnYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternSolidGr0iy_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidRed_fu_643                                                  |    <0.001 |
+|             redYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternSolidRe1iI_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidWhite_fu_652                                                |    <0.001 |
+|             whiYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaDeQ_rom_U                              |    <0.001 |
+|           grp_tpgPatternTartanColo_fu_502                                                |    <0.001 |
+|             tpgBarSelRgb_b266_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             tpgBarSelRgb_r260_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorcud_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_u254_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckertde_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_v251_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckersc4_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_y257_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckerqcK_rom_U                              |    <0.001 |
+|             tpgTartanBarArray_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternTartanCFfa_rom_U                              |    <0.001 |
+|           grp_tpgPatternVerticalHo_fu_603                                                |    <0.001 |
+|           grp_tpgPatternVerticalRa_fu_591                                                |    <0.001 |
+|           grp_tpgPatternZonePlate_fu_404                                                 |     0.007 |
+|             v_tpg_am_addmul_1Ngs_U61                                                     |     0.002 |
+|               design_1_v_tpg_0_0_v_tpg_am_addmul_1Ngs_DSP48_6_U                          |     0.002 |
+|             v_tpg_mac_muladd_PgM_U63                                                     |     0.002 |
+|               design_1_v_tpg_0_0_v_tpg_mac_muladd_PgM_DSP48_8_U                          |     0.002 |
+|             v_tpg_mul_mul_9nsQgW_U64                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_v_tpg_mul_mul_9nsQgW_DSP48_9_U                          |    <0.001 |
+|         tpgForeground_U0                                                                 |     0.003 |
+|           grp_tpgPatternBox_fu_282                                                       |     0.001 |
+|           grp_tpgPatternCrossHair_fu_309                                                 |    <0.001 |
+|             whiYuv_2_U                                                                   |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHa2iS_rom_U                              |    <0.001 |
+|         v_tpg_CTRL_s_axi_U                                                               |     0.002 |
+|     v_tpg_1                                                                              |     0.025 |
+|       inst                                                                               |     0.025 |
+|         MultiPixStream2AXIvi_U0                                                          |     0.001 |
+|           grp_reg_unsigned_short_s_fu_189                                                |    <0.001 |
+|           grp_reg_unsigned_short_s_fu_195                                                |    <0.001 |
+|         bckgndYUV_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_bckgndYUV_V3i2_ram                                  |    <0.001 |
+|         bckgndYUV_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_bckgndYUV_V4jc_ram                                  |    <0.001 |
+|         bckgndYUV_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_bckgndYUV_V5jm_ram                                  |    <0.001 |
+|         ovrlayYUV_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_ovrlayYUV_V6jw_ram                                  |    <0.001 |
+|         ovrlayYUV_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_ovrlayYUV_V7jG_ram                                  |    <0.001 |
+|         ovrlayYUV_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_ovrlayYUV_V8jQ_ram                                  |    <0.001 |
+|         tpgBackground_U0                                                                 |     0.018 |
+|           call_ret15_tpgPRBS_fu_670                                                      |    <0.001 |
+|           grp_tpgPatternCheckerBoa_fu_469                                                |    <0.001 |
+|             tpgBarSelRgb_b267_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             tpgCheckerBoardArray_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckerocq_rom_U                              |    <0.001 |
+|           grp_tpgPatternColorBars_fu_556                                                 |    <0.001 |
+|             tpgBarSelRgb_b265_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             tpgBarSelRgb_r259_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorcud_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_u253_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckertde_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_v250_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckersc4_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_y256_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckerqcK_rom_U                              |    <0.001 |
+|           grp_tpgPatternCrossHatch_fu_535                                                |    <0.001 |
+|             blkYuv_1_U                                                                   |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaEe0_rom_U                              |    <0.001 |
+|             whiYuv_1_U                                                                   |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaDeQ_rom_U                              |    <0.001 |
+|           grp_tpgPatternDPColorRam_fu_580                                                |    <0.001 |
+|           grp_tpgPatternDPColorSqu_fu_424                                                |    <0.001 |
+|             DPtpgBarArray_U                                                              |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorbkb_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_CEA_b_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorhbi_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_CEA_g_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorg8j_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_CEA_r_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorfYi_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_VESA_1_U                                                      |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_VESA_5_U                                                      |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorcud_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_601_u_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorkbM_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_601_v_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorlbW_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_601_y_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoribs_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_709_u_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColormb6_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_709_v_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorncg_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_709_y_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorjbC_rom_U                              |    <0.001 |
+|           grp_tpgPatternHorizontal_fu_615                                                |    <0.001 |
+|           grp_tpgPatternRainbow_fu_395                                                   |     0.007 |
+|             tpgSinTableArray_9bi_1_U                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternRainbowvdy_rom_U                              |    <0.001 |
+|             v_tpg_mac_muladd_Aem_U41                                                     |     0.001 |
+|               design_1_v_tpg_0_0_v_tpg_mac_muladd_Aem_DSP48_3_U                          |     0.001 |
+|             v_tpg_mul_8ns_8s_wdI_U37                                                     |     0.000 |
+|               design_1_v_tpg_0_0_v_tpg_mul_8ns_8s_wdI_MulnS_0_U                          |     0.000 |
+|           grp_tpgPatternSolidBlack_fu_661                                                |    <0.001 |
+|             blkYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaEe0_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidBlue_fu_625                                                 |    <0.001 |
+|             bluYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternSolidBlZio_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidGreen_fu_634                                                |    <0.001 |
+|             grnYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternSolidGr0iy_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidRed_fu_643                                                  |    <0.001 |
+|             redYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternSolidRe1iI_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidWhite_fu_652                                                |    <0.001 |
+|             whiYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaDeQ_rom_U                              |    <0.001 |
+|           grp_tpgPatternTartanColo_fu_502                                                |    <0.001 |
+|             tpgBarSelRgb_b266_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             tpgBarSelRgb_r260_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorcud_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_u254_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckertde_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_v251_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckersc4_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_y257_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckerqcK_rom_U                              |    <0.001 |
+|             tpgTartanBarArray_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternTartanCFfa_rom_U                              |    <0.001 |
+|           grp_tpgPatternVerticalHo_fu_603                                                |    <0.001 |
+|           grp_tpgPatternVerticalRa_fu_591                                                |    <0.001 |
+|           grp_tpgPatternZonePlate_fu_404                                                 |     0.006 |
+|             v_tpg_am_addmul_1Ngs_U61                                                     |     0.002 |
+|               design_1_v_tpg_0_0_v_tpg_am_addmul_1Ngs_DSP48_6_U                          |     0.002 |
+|             v_tpg_mac_muladd_PgM_U63                                                     |     0.002 |
+|               design_1_v_tpg_0_0_v_tpg_mac_muladd_PgM_DSP48_8_U                          |     0.002 |
+|             v_tpg_mul_mul_9nsQgW_U64                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_v_tpg_mul_mul_9nsQgW_DSP48_9_U                          |    <0.001 |
+|         tpgForeground_U0                                                                 |     0.003 |
+|           grp_tpgPatternBox_fu_282                                                       |     0.001 |
+|           grp_tpgPatternCrossHair_fu_309                                                 |    <0.001 |
+|             whiYuv_2_U                                                                   |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHa2iS_rom_U                              |    <0.001 |
+|         v_tpg_CTRL_s_axi_U                                                               |     0.002 |
+|     v_tpg_2                                                                              |     0.025 |
+|       inst                                                                               |     0.025 |
+|         MultiPixStream2AXIvi_U0                                                          |     0.001 |
+|           grp_reg_unsigned_short_s_fu_189                                                |    <0.001 |
+|           grp_reg_unsigned_short_s_fu_195                                                |    <0.001 |
+|         bckgndYUV_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_bckgndYUV_V3i2_ram                                  |    <0.001 |
+|         bckgndYUV_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_bckgndYUV_V4jc_ram                                  |    <0.001 |
+|         bckgndYUV_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_bckgndYUV_V5jm_ram                                  |    <0.001 |
+|         ovrlayYUV_V_val_0_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_ovrlayYUV_V6jw_ram                                  |    <0.001 |
+|         ovrlayYUV_V_val_1_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_ovrlayYUV_V7jG_ram                                  |    <0.001 |
+|         ovrlayYUV_V_val_2_V_U                                                            |    <0.001 |
+|           U_design_1_v_tpg_0_0_v_tpg_ovrlayYUV_V8jQ_ram                                  |    <0.001 |
+|         tpgBackground_U0                                                                 |     0.018 |
+|           call_ret15_tpgPRBS_fu_670                                                      |    <0.001 |
+|           grp_tpgPatternCheckerBoa_fu_469                                                |    <0.001 |
+|             tpgBarSelRgb_b267_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             tpgCheckerBoardArray_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckerocq_rom_U                              |    <0.001 |
+|           grp_tpgPatternColorBars_fu_556                                                 |    <0.001 |
+|             tpgBarSelRgb_b265_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             tpgBarSelRgb_r259_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorcud_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_u253_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckertde_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_v250_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckersc4_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_y256_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckerqcK_rom_U                              |    <0.001 |
+|           grp_tpgPatternCrossHatch_fu_535                                                |    <0.001 |
+|             blkYuv_1_U                                                                   |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaEe0_rom_U                              |    <0.001 |
+|             whiYuv_1_U                                                                   |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaDeQ_rom_U                              |    <0.001 |
+|           grp_tpgPatternDPColorRam_fu_580                                                |    <0.001 |
+|           grp_tpgPatternDPColorSqu_fu_424                                                |    <0.001 |
+|             DPtpgBarArray_U                                                              |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorbkb_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_CEA_b_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorhbi_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_CEA_g_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorg8j_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_CEA_r_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorfYi_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_VESA_1_U                                                      |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             DPtpgBarSelRgb_VESA_5_U                                                      |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorcud_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_601_u_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorkbM_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_601_v_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorlbW_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_601_y_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoribs_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_709_u_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColormb6_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_709_v_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorncg_rom_U                              |    <0.001 |
+|             DPtpgBarSelYuv_709_y_U                                                       |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorjbC_rom_U                              |    <0.001 |
+|           grp_tpgPatternHorizontal_fu_615                                                |    <0.001 |
+|           grp_tpgPatternRainbow_fu_395                                                   |     0.007 |
+|             tpgSinTableArray_9bi_1_U                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternRainbowvdy_rom_U                              |    <0.001 |
+|             v_tpg_mac_muladd_Aem_U41                                                     |     0.001 |
+|               design_1_v_tpg_0_0_v_tpg_mac_muladd_Aem_DSP48_3_U                          |     0.001 |
+|             v_tpg_mul_8ns_8s_wdI_U37                                                     |     0.000 |
+|               design_1_v_tpg_0_0_v_tpg_mul_8ns_8s_wdI_MulnS_0_U                          |     0.000 |
+|           grp_tpgPatternSolidBlack_fu_661                                                |    <0.001 |
+|             blkYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaEe0_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidBlue_fu_625                                                 |    <0.001 |
+|             bluYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternSolidBlZio_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidGreen_fu_634                                                |    <0.001 |
+|             grnYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternSolidGr0iy_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidRed_fu_643                                                  |    <0.001 |
+|             redYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternSolidRe1iI_rom_U                              |    <0.001 |
+|           grp_tpgPatternSolidWhite_fu_652                                                |    <0.001 |
+|             whiYuv_U                                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHaDeQ_rom_U                              |    <0.001 |
+|           grp_tpgPatternTartanColo_fu_502                                                |    <0.001 |
+|             tpgBarSelRgb_b266_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColoreOg_rom_U                              |    <0.001 |
+|             tpgBarSelRgb_r260_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternDPColorcud_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_u254_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckertde_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_v251_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckersc4_rom_U                              |    <0.001 |
+|             tpgBarSelYuv_y257_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCheckerqcK_rom_U                              |    <0.001 |
+|             tpgTartanBarArray_U                                                          |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternTartanCFfa_rom_U                              |    <0.001 |
+|           grp_tpgPatternVerticalHo_fu_603                                                |    <0.001 |
+|           grp_tpgPatternVerticalRa_fu_591                                                |    <0.001 |
+|           grp_tpgPatternZonePlate_fu_404                                                 |     0.007 |
+|             v_tpg_am_addmul_1Ngs_U61                                                     |     0.002 |
+|               design_1_v_tpg_0_0_v_tpg_am_addmul_1Ngs_DSP48_6_U                          |     0.002 |
+|             v_tpg_mac_muladd_PgM_U63                                                     |     0.002 |
+|               design_1_v_tpg_0_0_v_tpg_mac_muladd_PgM_DSP48_8_U                          |     0.002 |
+|             v_tpg_mul_mul_9nsQgW_U64                                                     |    <0.001 |
+|               design_1_v_tpg_0_0_v_tpg_mul_mul_9nsQgW_DSP48_9_U                          |    <0.001 |
+|         tpgForeground_U0                                                                 |     0.003 |
+|           grp_tpgPatternBox_fu_282                                                       |     0.001 |
+|           grp_tpgPatternCrossHair_fu_309                                                 |    <0.001 |
+|             whiYuv_2_U                                                                   |    <0.001 |
+|               design_1_v_tpg_0_0_tpgPatternCrossHa2iS_rom_U                              |    <0.001 |
+|         v_tpg_CTRL_s_axi_U                                                               |     0.001 |
+|     wireless_mgr_0                                                                       |     0.019 |
+|       U0                                                                                 |     0.019 |
+|         sdio_cmd_iobuf                                                                   |     0.004 |
+|         sdio_dat0_iobuf                                                                  |     0.004 |
+|         sdio_dat1_iobuf                                                                  |     0.004 |
+|         sdio_dat2_iobuf                                                                  |     0.004 |
+|         sdio_dat3_iobuf                                                                  |     0.004 |
+|     xlconstant_0                                                                         |     0.000 |
+|     xlconstant_1                                                                         |     0.000 |
+|     xlconstant_2                                                                         |     0.000 |
+|     zed_ali3_controller_0                                                                |     0.111 |
+|       U0                                                                                 |     0.111 |
+|         zed_ali3_controller_core_l                                                       |     0.111 |
+|           clock_generator_serdes                                                         |     0.107 |
+|           synchro_reset                                                                  |    <0.001 |
+|           videoout                                                                       |     0.003 |
+|   iic_0_scl_iobuf                                                                        |     0.004 |
+|   iic_0_sda_iobuf                                                                        |     0.004 |
++------------------------------------------------------------------------------------------+-----------+
+
+

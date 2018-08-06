@@ -1,0 +1,57 @@
+12:20:54 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:434:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:472:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:275:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:472:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:467:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:434:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:430:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:472:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:464:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:434:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:427:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 148240	   2940	12314384	12465564	 be359c	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+
+12:20:54 Build Finished (took 945ms)
+

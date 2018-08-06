@@ -1,0 +1,1098 @@
+11:10:37 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/spi_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/v_mix_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/v_mix_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/v_tpg_v8_0/src"
+make -C ps7_cortexa9_0/libsrc/v_tpg_v8_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/video_common_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/video_common_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/vtc_v7_2/src"
+make -C ps7_cortexa9_0/libsrc/vtc_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling axivdma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/spi_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling spi"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/v_mix_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/v_mix_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling v_mix"
+"Running Make libs in ps7_cortexa9_0/libsrc/v_tpg_v8_0/src"
+make -C ps7_cortexa9_0/libsrc/v_tpg_v8_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling v_tpg"
+"Running Make libs in ps7_cortexa9_0/libsrc/video_common_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/video_common_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling video_common"
+"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v7_2/src"
+make -C ps7_cortexa9_0/libsrc/vtc_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling video timing controller"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+11:11:04 **** Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:380:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:418:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:221:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:418:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:413:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:380:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:376:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:418:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:410:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:380:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:373:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vdma_api.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/vdma_api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/vdma_api.d" -MT"src/vdma_api.o" -o "src/vdma_api.o" "../src/vdma_api.c"
+'Finished building: ../src/vdma_api.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147576	   2868	12314384	12464828	 be32bc	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+11:11:18 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:12:16 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:380:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:418:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:221:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:418:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:413:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:380:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:376:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:418:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:410:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:380:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:373:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147512	   2868	12314384	12464764	 be327c	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+11:13:52 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:380:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:418:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:221:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:418:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:413:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:380:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:376:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:418:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:410:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:380:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:373:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147576	   2868	12314384	12464828	 be32bc	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:01:05 **** Clean-only build of configuration Debug for project MiniZed4 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o  ./src/helloworld.d ./src/platform.d ./src/vdma_api.d  MiniZed4.elf.size  MiniZed4.elf
+' '
+12:01:05 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+12:01:09 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/spi_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/spi_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/v_mix_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/v_mix_v2_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/v_tpg_v8_0/src"
+make -C ps7_cortexa9_0/libsrc/v_tpg_v8_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/video_common_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/video_common_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/vtc_v7_2/src"
+make -C ps7_cortexa9_0/libsrc/vtc_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_2/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling axivdma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/spi_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/spi_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling spi"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/v_mix_v2_0/src"
+make -C ps7_cortexa9_0/libsrc/v_mix_v2_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling v_mix"
+"Running Make libs in ps7_cortexa9_0/libsrc/v_tpg_v8_0/src"
+make -C ps7_cortexa9_0/libsrc/v_tpg_v8_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling v_tpg"
+"Running Make libs in ps7_cortexa9_0/libsrc/video_common_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/video_common_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling video_common"
+"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v7_2/src"
+make -C ps7_cortexa9_0/libsrc/vtc_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling video timing controller"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+12:01:37 **** Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:380:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:418:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:221:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:418:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:413:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:380:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:376:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:418:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:410:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:380:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:373:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vdma_api.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/vdma_api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/vdma_api.d" -MT"src/vdma_api.o" -o "src/vdma_api.o" "../src/vdma_api.c"
+'Finished building: ../src/vdma_api.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147640	   2940	12314384	12464964	 be3344	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:03:56 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:07:34 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:89:54: error: invalid type argument of '->' (have 'XV_tpg_Config {aka struct <anonymous>}')
+  XV_tpg_CfgInitialize(&tpg1, tpg_config1, tpg_config1->BaseAddress);
+                                                      ^
+../src/helloworld.c:89:30: error: incompatible type for argument 2 of 'XV_tpg_CfgInitialize'
+  XV_tpg_CfgInitialize(&tpg1, tpg_config1, tpg_config1->BaseAddress);
+                              ^
+In file included from ../src/helloworld.c:13:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xv_tpg.h:125:5: note: expected 'XV_tpg_Config * {aka struct <anonymous> *}' but argument is of type 'XV_tpg_Config {aka struct <anonymous>}'
+ int XV_tpg_CfgInitialize(XV_tpg *InstancePtr,
+     ^
+../src/helloworld.c:59:43: warning: unused variable 'tpg_config2' [-Wunused-variable]
+     XV_tpg_Config *tpg_config,tpg_config1,tpg_config2;
+                                           ^
+../src/helloworld.c:58:21: warning: unused variable 'tpg2' [-Wunused-variable]
+     XV_tpg tpg,tpg1,tpg2;
+                     ^
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:406:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:444:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:247:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+make: *** [src/helloworld.o] Error 1
+12:07:50 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:14: error: incompatible types when assigning to type 'XV_tpg_Config {aka struct <anonymous>}' from type 'XV_tpg_Config * {aka struct <anonymous> *}'
+  tpg_config1 = XV_tpg_LookupConfig(XPAR_XV_TPG_1_DEVICE_ID);
+              ^
+../src/helloworld.c:89:54: error: invalid type argument of '->' (have 'XV_tpg_Config {aka struct <anonymous>}')
+  XV_tpg_CfgInitialize(&tpg1, tpg_config1, tpg_config1->BaseAddress);
+                                                      ^
+../src/helloworld.c:89:30: error: incompatible type for argument 2 of 'XV_tpg_CfgInitialize'
+  XV_tpg_CfgInitialize(&tpg1, tpg_config1, tpg_config1->BaseAddress);
+                              ^
+In file included from ../src/helloworld.c:13:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xv_tpg.h:125:5: note: expected 'XV_tpg_Config * {aka struct <anonymous> *}' but argument is of type 'XV_tpg_Config {aka struct <anonymous>}'
+ int XV_tpg_CfgInitialize(XV_tpg *InstancePtr,
+     ^
+../src/helloworld.c:59:43: warning: unused variable 'tpg_config2' [-Wunused-variable]
+     XV_tpg_Config *tpg_config,tpg_config1,tpg_config2;
+                                           ^
+../src/helloworld.c:58:21: warning: unused variable 'tpg2' [-Wunused-variable]
+     XV_tpg tpg,tpg1,tpg2;
+                     ^
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:406:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:444:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:247:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+make: *** [src/helloworld.o] Error 1
+12:11:48 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:45: warning: unused variable 'tpg_config2' [-Wunused-variable]
+     XV_tpg_Config *tpg_config,*tpg_config1,*tpg_config2;
+                                             ^
+../src/helloworld.c:58:21: warning: unused variable 'tpg2' [-Wunused-variable]
+     XV_tpg tpg,tpg1,tpg2;
+                     ^
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:406:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:444:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:247:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:444:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:439:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:406:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:402:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:444:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:436:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:406:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:399:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147948	   2940	12314384	12465272	 be3478	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:12:17 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:45: warning: unused variable 'tpg_config2' [-Wunused-variable]
+     XV_tpg_Config *tpg_config,*tpg_config1,*tpg_config2;
+                                             ^
+../src/helloworld.c:58:21: warning: unused variable 'tpg2' [-Wunused-variable]
+     XV_tpg tpg,tpg1,tpg2;
+                     ^
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:406:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:444:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:247:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:444:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:439:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:406:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:402:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:444:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:436:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:406:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:399:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147948	   2940	12314384	12465272	 be3478	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:13:54 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:45: warning: unused variable 'tpg_config2' [-Wunused-variable]
+     XV_tpg_Config *tpg_config,*tpg_config1,*tpg_config2;
+                                             ^
+../src/helloworld.c:58:21: warning: unused variable 'tpg2' [-Wunused-variable]
+     XV_tpg tpg,tpg1,tpg2;
+                     ^
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:406:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:444:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:247:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:444:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:439:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:406:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:402:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:444:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:436:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:406:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:399:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147948	   2940	12314384	12465272	 be3478	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:15:23 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:45: warning: unused variable 'tpg_config2' [-Wunused-variable]
+     XV_tpg_Config *tpg_config,*tpg_config1,*tpg_config2;
+                                             ^
+../src/helloworld.c:58:21: warning: unused variable 'tpg2' [-Wunused-variable]
+     XV_tpg tpg,tpg1,tpg2;
+                     ^
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:406:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:444:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:247:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:444:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:439:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:406:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:402:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:444:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:436:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:406:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:399:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147948	   2940	12314384	12465272	 be3478	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:15:50 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:45: warning: unused variable 'tpg_config2' [-Wunused-variable]
+     XV_tpg_Config *tpg_config,*tpg_config1,*tpg_config2;
+                                             ^
+../src/helloworld.c:58:21: warning: unused variable 'tpg2' [-Wunused-variable]
+     XV_tpg tpg,tpg1,tpg2;
+                     ^
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:406:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:444:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:247:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:444:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:439:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:406:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:402:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:444:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:436:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:406:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:399:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147948	   2940	12314384	12465272	 be3478	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:19:07 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:434:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:472:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:275:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:472:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:467:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:434:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:430:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:472:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:464:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:434:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:427:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 148240	   2940	12314384	12465564	 be359c	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:19:38 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:434:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:472:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:275:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:472:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:467:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:434:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:430:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:472:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:464:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:434:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:427:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 148240	   2940	12314384	12465564	 be359c	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:20:06 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:134:44: error: 'f' undeclared (first use in this function)
+  XV_mix_Set_HwReg_layerEnable(&xv_mix,(u32)f);
+                                            ^
+../src/helloworld.c:134:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:434:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:472:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:275:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+make: *** [src/helloworld.o] Error 1
+12:20:25 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:434:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:472:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:275:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:472:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:467:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:434:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:430:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:472:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:464:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:434:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:427:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 148240	   2940	12314384	12465564	 be359c	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
+12:20:54 **** Incremental Build of configuration Debug for project MiniZed4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -Ofast -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"C:\hdl_projects\MiniZed_full\MiniZed_full.sdk\MiniZed4\src" -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'IicPsMasterPolledExample':
+../src/helloworld.c:434:26: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:472:25: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:275:6: warning: unused variable 'op' [-Wunused-variable]
+  u32 op ;
+      ^
+../src/helloworld.c:472:25: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:467:4: note: containing loop
+    for(y = (0); y < (400); y++) //476 720
+    ^
+../src/helloworld.c:434:26: warning: iteration 1u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:430:5: note: containing loop
+     for(y = 0; y < 640; y++)
+     ^
+../src/helloworld.c:472:25: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+     pFrames[iPixelAddr] = (u32) (((Image[(y/scaley)][(x/scalex)+4])<<16)|
+                         ^
+../src/helloworld.c:464:1: note: containing loop
+ for(x = 0; x < (640); x++) //6201276
+ ^
+../src/helloworld.c:434:26: warning: iteration 3u invokes undefined behavior [-Waggressive-loop-optimizations]
+      pFrames[iPixelAddr] =  0xaa000000;
+                          ^
+../src/helloworld.c:427:2: note: containing loop
+  for(x = 0; x < (800); x++)
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MiniZed4.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "MiniZed4.elf"  ./src/helloworld.o ./src/platform.o ./src/vdma_api.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MiniZed4.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size MiniZed4.elf  |tee "MiniZed4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 148240	   2940	12314384	12465564	 be359c	MiniZed4.elf
+'Finished building: MiniZed4.elf.size'
+' '
